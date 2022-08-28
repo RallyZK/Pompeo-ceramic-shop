@@ -642,6 +642,7 @@ footer h4 {
 
     .main-text p {
         width: 250px;
+        font-size: 14px;
     }
 
     .main-pic {
@@ -704,6 +705,10 @@ footer h4 {
         left: 5%;
         width: 50%;
         height: 100%;
+    }
+
+    .main-text p {        
+        font-size: 12px;
     }
 
     .main-pic {
@@ -902,7 +907,7 @@ footer h4 {
     }
 
     .shop-btn {
-        margin-top: 0px;
+        margin-top: 10px;
         width: 180px;
         height: 42px;
     }
