@@ -1,3 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    
+    font-family: Poppins;
+    max-width: 1440px;
+    height: 4800px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 10px;
+    max-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 9%;
+}
+
+.logo {
+    display: block;
+    margin-left: 1%;
+}
+
+nav {
+    max-width: 455px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1%;
+}
+
+header ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.nav-li {
+    text-transform: uppercase;
+    color: #6C6C6C;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.nav-li:hover {
+    color: #AC1313
+}
+
+.cart {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: Libre Franklin;
+    font-size: 14px;
+}
+
+.cart:before {
+    content: url(./pictures/Cart.svg);
+    left: 0;
+    top: 2px;
+    font-weight: 900;
+}
+
+.main {
+    height: 708px;
+    background-image: url(./pictures/main-image.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-text,
+.main-pic {
+    height: 60%;
+}
+
+.main-text {
+    position: relative;
+    left: 10%;
+    width: 45%;
+}
+
+.main-pic {
+    width: 60%;
+    background: center/cover;
+    background-image: url(./pictures/ceramic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 1%;
+}
+
+.main-text h3 {
+    margin-top: 10%;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(215, 116, 116, 1);
+    text-transform: uppercase;
+}
+
+.main-text span {
+    font-family: Playfair Display;
+    color: #AC1313;
+    font-size: 68px;
+    vertical-align: super
+}
+
+.main-text h1 {
+    font-size: 48px;
+    line-height: 54px;
+}
+
+.main-text p {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Libre Franklin;
+    color: rgba(108, 108, 108, 1);
+}
+
+.shop-btn {
+    margin-top: 40px;
+    border: none;
+    background-color: #AC1313;
+    color: #fff;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 80%;
+    width: 201px;
+    height: 62px;
+    cursor: pointer;
+}
+
+.three-rounds {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.three-rounds h3 {
+    margin-top: 35px;
+    color: rgba(215, 116, 116, 1);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.three-rounds h2 {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.three-rounds span {
+    font-family: Playfair Display;
+    color: #AC1313;
+    font-size: 58px;
+    vertical-align: super;
+}
+
+.rounds {
+    display: flex;
+    gap: 150px;
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: center;
+    position: relative;
+}
+
+.rotated {
+    position: absolute;
+    left: -180px;
+    top: 50%;
+    text-transform: uppercase;
+    color: rgba(219, 219, 219, 1);
+    rotate: 270deg;
+}
+
+.round1,
+.round2,
+.round3 {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.round1 {
+    background-color: #E4B366;
+    border: #b08642 solid 30px;
+}
+
+.round2 {
+    background-color: #F05B10;
+    border: #c14b0f solid 30px;
+}
+
+.round3 {
+    background-color: #A21010;
+    border: #8a0a0a solid 30px;
+}
+
+.underrounds-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 320px;
+}
+
+.half {
+    width: 40%;
+    text-align: start;
+}
+
+.half h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.half p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Libre Franklin;
+    color: rgba(108, 108, 108, 1);
+}
+
+.grid {
+    width: 90%;
+    margin: 250px auto;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 224px 224px 224px;
+}
+
+.grid-item-grey {
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.grid-item {
+    align-items: flex-end;
+}
+
+.grid h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.grid p {
+    width: 388px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Libre Franklin;
+    color: rgba(108, 108, 108, 1);
+    margin-bottom: 20px;
+}
+
+.grid a {
+    text-decoration: none;
+}
+
+.grid a:link,
+a:visited {
+    color: #000;
+}
+
+.grid-img {
+    position: absolute;
+    left: 28%;
+    bottom: -60%;
+}
+
+.goods {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.goods h3 {
+    margin-top: 35px;
+    color: rgba(215, 116, 116, 1);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.goods h2 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.goods-rotated {
+    position: absolute;
+    left: -180px;
+    top: 50%;
+    text-transform: uppercase;
+    color: rgba(219, 219, 219, 1);
+    rotate: 270deg;
+}
+
+.goods-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.goods-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    text-align: start;
+}
+
+.good-desc {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.line {
+    background-color: #b3b0b0;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0px 15px 0px;
+}
+
+.ready-shopping {
+    margin-top: 120px;
+    height: 471px;
+    background-image: url(./pictures/plates.png);
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-left: 144px;
+}
+
+.ready-shopping h3 {
+    margin-top: 35px;
+    font-weight: 400;
+    color: rgba(215, 116, 116, 1);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.ready-shopping h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.ready-shopping p {
+    color: #6C6C6C;
+}
+
+.ready-shopping a {
+    color: #AC1313;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 134px;
+    position: relative;
+}
+
+.news-rotated {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    text-transform: uppercase;
+    color: rgba(219, 219, 219, 1);
+    rotate: 270deg;
+}
+
+
+.plan {
+    display: block;
+    margin: 0 auto;
+}
+
+.news h3 {
+    margin-top: 35px;
+    font-weight: 400;
+    color: rgba(215, 116, 116, 1);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.news h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.news h4 {
+    color: #6C6C6C;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.news h4::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(133, 52, 255, 1);
+    margin-right: 10px;
+}
+
+.news span {
+    font-family: Playfair Display;
+    color: #AC1313;
+    font-size: 58px;
+    vertical-align: super;
+}
+
+.news input {
+    height: 45px;
+    width: 325px;
+    border: 1px solid #6C6C6C;
+    padding-left: 10px;
+    outline: none;
+}
+
+.news input:active {
+    border: none;
+}
+
+.subs-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    height: 45px;
+    width: 177px;
+}
+
+footer {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(219, 219, 219, 0.1);
+    height: 611px;;
+    position: relative;
+}
+
+footer img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-p {
+margin: 30px 0px 70px 0px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
+.contacts-item {
+    width: 30%;
+    height: 127px;
+    display: flex;
+    flex-direction: column;    
+    gap: 10px   
+}
+
+footer h4 {
+    font-weight: 400;
+    font-size: 14px;  
+}
+
+.footer-desc {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    line-height: 85px;
+    height: 85px;
+    background-color: rgba(219, 219, 219, 0.3);    
 }
