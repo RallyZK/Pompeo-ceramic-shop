@@ -139,7 +139,7 @@ header li {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     overflow: auto;    
-    transform: translateX(120px);
+    transform: translateX(220px);
     transition: transform 0.8s;
 }
 
@@ -906,7 +906,7 @@ footer h4 {
         height: 300px;
     }
 
-    
+
     .shop-btn {
         margin-top: 10px;
         width: 180px;
